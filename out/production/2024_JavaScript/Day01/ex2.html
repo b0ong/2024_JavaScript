@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<div id="input">
+  <script>
+    let outputElement = document.getElementById("input");
+    let birthYear = prompt("태어난 년도를 입력하세요 (YYYY)");
+    let currentYear = new Date().getFullYear();
+    let age = currentYear - birthYear;
+
+    outputElement.innerHTML += "<h1>현재 나이 구하기</h1>";
+    outputElement.innerHTML += "<p>" + currentYear + "년 현재</p>";
+    outputElement.innerHTML += "<p>" + birthYear + "년에 태어난 사람의 나이는 " + age + "입니다</p>";
+  </script>
+</div>
+</body>
+</html>
