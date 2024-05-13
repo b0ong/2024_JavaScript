@@ -22,7 +22,7 @@ for (let i = 0; i < liElements.length; i++) {
     console.log(liElements[i].textContent);
 }
 
-const arr = [...liElements];
+const arr = [...liElements];        // 스프레드 문법으로 배열 객체 만듬
 arr.forEach(li => {
     console.log(li.textContent);
 });

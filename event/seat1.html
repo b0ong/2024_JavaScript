@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자리 배치도</title>
+</head>
+<body>
+<h1>자리 배치도</h1>
+<script>
+        let memNum = prompt("입장객은 몇 명입니까?");
+        let colNum = prompt("한 줄에 몇 명씩 앉습니까?");
+
+        if (memNum % colNum == 0) rowNum = parseInt(memNum / colNum);
+        else rowNum = parseInt(memNum / colNum) + 1;
+
+        document.write("<table>");
+        for (let i = 0; i < rowNum; i++) {
+            document.write("<tr>");
+            for (let j = 0; j < colNum; j++) {
+                document.write("<td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+</script>
+<div></div>
+</body>
+</html>

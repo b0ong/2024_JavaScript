@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementByClassName</title>
+</head>
+<body>
+<h1> getElementByClassName</h1>
+<h2>분식점 메뉴</h2>
+<ul>
+    <li>깁밥</li>
+    <li>라면</li>
+    <li>순대</li>
+</ul>
+<h2>중국집 메뉴</h2>
+<ul>
+    <li class = "a">짜장면</li>
+    <li class = "a">짬뽕</li>
+    <li class = "a">볶음밥</li>
+</ul>
+<script>
+    const foodListElement = document.getElementsByClassName("a")
+    console.log(foodListElement[1].textContent);
+</script>
+</body>
+</html>

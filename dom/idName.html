@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="welcome">어서오농</p>
+<script>
+    const changeColor = (newColor) => {     // 애로우 함수(화살표함수)
+        const welc = document.getElementById('welcome');
+        welc.style.color = newColor
+    };
+</script>
+<button type="button" onclick="changeColor('red');">빨간색</button>
+<button type="button" onclick="changeColor('blue');">파랑색</button>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container {
+            width: 300px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <img src="./img/cup-1.png" id="cup">
+</div>
+<script>
+    let cup = document.querySelector("#cup");
+    cup.onclick = function () {
+        alert("이미지를 클릭함");
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>number Guess</h1>
+<p>
+    1부터 100사이의 숫자를 입력하시요.
+</p>
+<input type="text" id="number">
+<button type="button" onclick="overNum()" id="bnt">숫자추측</button>
+<div id="hint">
+</div>
+<script>
+    let solution = 29;
+    const button = document.getElementById("bnt");
+    console.log(button);
+    function overNum() {
+        const ans = document.getElementById("number").value;
+        try {
+            if (solution < ans) throw ("크농");
+            if (solution > ans) throw ("작농");
+            if (solution == ans) throw ("정답");
+        } catch (err){
+            // e.innerHTML = '힌트: ' + err;
+            document.getElementById("hint").innerHTML = '힌트: ' + err;
+        }
+    }
+    button.addEventListener("click", overNum);
+</script>
+</body>
+</html>

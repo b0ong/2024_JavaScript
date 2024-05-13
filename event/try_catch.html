@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let memNum = prompt("입장객은 몇 명입니까?");
+    let colNum = prompt("한 줄에 몇 명씩 앉습니까?");
+
+    if (memNum % colNum == 0) rowNum = parseInt(memNum / colNum);
+    else rowNum = parseInt(memNum / colNum) + 1;
+
+
+    // for (let i=1; i <= memNum; i++) {
+    //     // console.log("i:"+i);
+    //         document.write(`i: ${i}`);
+    //     for (let j=1; j <= colNum; j++) {
+    //         // console.log("j:"+j);
+    //         document.write(`j: ${i+j}`);
+    //     }
+    //         document.write("</br>");
+    // }
+    for (let i = 0; i < rowNum; i++) {
+        for (let j = 0; j < colNum; j++) {
+            let number = i * colNum + j + 1; // 각 자리의 번호 계산
+            if (number <= memNum) {
+                document.write(number + " ");
+            }
+        }
+        document.write("<br>");
+    }
+
+</script>
+</body>
+</html>

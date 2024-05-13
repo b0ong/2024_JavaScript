@@ -108,3 +108,16 @@ const char = 'a';
     const age = 29;
     console.log(i + age + '살 입니다.');
 ```
+### DOM (Document Object Model)
+- 자바스크립트를 HTML에 적용하기 위해서 HTML의 요소를 문서객체형태로 이해하는 것
+#### DOM API
+- Document: <html> dom 트리의 루트노드
+- Element: 각 태그
+- arribute: 속성
+- style: css
+- collection: 배열
+- HTMLCollection: javascript가 문서객체 접근해서 받아오는 리턴 타입(객체를 리턴하는 메서드 DOM요소에 접근)
+- getElementByTagName('name')
+- getElementByClass('name)
+- getElementById('id)
+- querySelector()
